@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleLog", "Logger\SimpleL
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LoggingDB", "Logger\LoggingDB\LoggingDB.sqlproj", "{FF039E98-AAC6-4665-B2E0-34EA0F82FB0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec", "Test\TestExec\TestExec.csproj", "{CF901D27-C980-4155-917C-8BCFF401E137}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FF039E98-AAC6-4665-B2E0-34EA0F82FB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF039E98-AAC6-4665-B2E0-34EA0F82FB0C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FF039E98-AAC6-4665-B2E0-34EA0F82FB0C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CF901D27-C980-4155-917C-8BCFF401E137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF901D27-C980-4155-917C-8BCFF401E137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF901D27-C980-4155-917C-8BCFF401E137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF901D27-C980-4155-917C-8BCFF401E137}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{15BE3493-1637-4296-B728-A2DD0F11DB5F} = {231800C3-C46C-4AD0-B9DA-649F4EEF8D3C}
 		{6790A35F-946F-4ECB-92AD-CDC10D556740} = {231800C3-C46C-4AD0-B9DA-649F4EEF8D3C}
 		{FF039E98-AAC6-4665-B2E0-34EA0F82FB0C} = {231800C3-C46C-4AD0-B9DA-649F4EEF8D3C}
+		{CF901D27-C980-4155-917C-8BCFF401E137} = {AAEC7B4F-1C85-4957-A017-B0A21FABC1C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {432DB886-EB7E-48C9-BBAE-4C18E7388BD4}

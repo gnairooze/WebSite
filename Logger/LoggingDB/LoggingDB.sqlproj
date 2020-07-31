@@ -63,4 +63,7 @@
     <Build Include="Procedures\Log_Add.sql" />
     <Build Include="Tables\Log.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="LoggingDB.publish.xml" />
+  </ItemGroup>
 </Project>

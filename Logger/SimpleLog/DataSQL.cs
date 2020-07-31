@@ -40,17 +40,23 @@ namespace SimpleLog
                     cmd.Parameters.AddWithValue("@ClassName", model.ClassName);
                     cmd.Parameters.AddWithValue("@MethodName", model.MethodName);
                     cmd.Parameters.AddWithValue("@IP", model.IP);
-                    cmd.Parameters.AddWithValue("@URL", model.URL);
+                    cmd.Parameters.AddWithValue("@URL", model.URL.ToString());
                     cmd.Parameters.AddWithValue("@Notes1", model.Notes1);
                     cmd.Parameters.AddWithValue("@Notes2", model.Notes2);
 
+
+                    conn.Open();
                     cmd.ExecuteNonQuery();
 
-                    model.ID = (long)cmd.Parameters["@ID"].Value;
+                    model.ID = long.Parse(cmd.Parameters["@ID"].Value.ToString());
+                    dynamic jsonObject = new Newtonsoft.Json.Linq.JObject();
+                    jsonObject.ID = model.ID;
 
-                    result.Code = Messages.CODE_SUCCESS;
-                    result.Data = new Newtonsoft.Json.Linq.JObject(new { ID = model.ID });
                     result.ResultStatus = Basics.Enums.Status.Succeeded;
+                    result.Code = Messages.CODE_SUCCESS;
+                    result.Data = jsonObject;
+
+                    conn.Close();
                 }
             }
             catch (Exception ex)
@@ -60,7 +66,7 @@ namespace SimpleLog
                 result.ResultStatus = Basics.Enums.Status.Failed;
                 result.Data = Newtonsoft.Json.Linq.JObject.Parse(Newtonsoft.Json.JsonConvert.SerializeObject(ex));
             }
-
+ 
             return result;
         }
     }
