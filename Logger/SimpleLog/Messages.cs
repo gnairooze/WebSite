@@ -11,5 +11,9 @@ namespace SimpleLog
 
         public const int CODE_LOG_DISABLED = 0;
         public const int CODE_SETTING_LOG_LEVEL_GREATER_THAN_MODEL_LOG_LEVEL = -1;
+
+        public const int CODE_GENERAL_ERROR = -1000;
+
+        public const int CODE_SUCCESS = 1;
     }
 }

@@ -6,6 +6,7 @@ namespace SimpleLog
 {
     public interface IDataBasic
     {
+        string LogDbConnectionString { get; set; }
         Basics.Result Add(LogInterface.LogModel model);
     }
 }
