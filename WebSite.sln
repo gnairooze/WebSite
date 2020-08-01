@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WWW", "WWW\WWW.csproj", "{89F58563-5AFC-4A60-8C69-6205146D5891}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logger", "Logger", "{231800C3-C46C-4AD0-B9DA-649F4EEF8D3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{AAEC7B4F-1C85-4957-A017-B0A21FABC1C7}"
@@ -17,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleLog", "Logger\SimpleL
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LoggingDB", "Logger\LoggingDB\LoggingDB.sqlproj", "{FF039E98-AAC6-4665-B2E0-34EA0F82FB0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExec", "Test\TestExec\TestExec.csproj", "{CF901D27-C980-4155-917C-8BCFF401E137}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestExec", "Test\TestExec\TestExec.csproj", "{CF901D27-C980-4155-917C-8BCFF401E137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WWW3", "WWW3\WWW3.csproj", "{28DDA36F-16B7-4B9D-84C7-BED9F70A3914}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{89F58563-5AFC-4A60-8C69-6205146D5891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89F58563-5AFC-4A60-8C69-6205146D5891}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89F58563-5AFC-4A60-8C69-6205146D5891}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89F58563-5AFC-4A60-8C69-6205146D5891}.Release|Any CPU.Build.0 = Release|Any CPU
 		{850E2FE0-7EF5-49BB-9A6A-1FBEA5C50F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{850E2FE0-7EF5-49BB-9A6A-1FBEA5C50F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{850E2FE0-7EF5-49BB-9A6A-1FBEA5C50F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{CF901D27-C980-4155-917C-8BCFF401E137}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF901D27-C980-4155-917C-8BCFF401E137}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF901D27-C980-4155-917C-8BCFF401E137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DDA36F-16B7-4B9D-84C7-BED9F70A3914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DDA36F-16B7-4B9D-84C7-BED9F70A3914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DDA36F-16B7-4B9D-84C7-BED9F70A3914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DDA36F-16B7-4B9D-84C7-BED9F70A3914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

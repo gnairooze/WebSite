@@ -1,6 +1,6 @@
 using System;
 
-namespace WWW.Models
+namespace WWW3.Models
 {
     public class ErrorViewModel
     {
