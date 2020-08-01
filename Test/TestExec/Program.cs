@@ -12,9 +12,6 @@ namespace TestExec
             Configure();
 
             Start();
-
-            //Console.WriteLine("Press any key to exit ...");
-           //Console.Read();
         }
 
         private static void Configure()
@@ -28,7 +25,17 @@ namespace TestExec
         private static void Start()
         {
             TestSimpleLog.Configuration = configuration;
-            TestSimpleLog.TestAddLog1();
+            var testOption = configuration.GetSection("testOption").Value;
+
+            switch (testOption)
+            {
+                case TestOptions.TEST_OPTION_LOG:
+                    TestSimpleLog.TestAddLog1();
+                    break;
+                case TestOptions.TEST_OPTION_SENDGRID:
+                    TestSendGrid.Execute().Wait();
+                    break;
+            }
         }
     }
 }
